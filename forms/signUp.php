@@ -17,7 +17,7 @@
       <form action="../functions/signInFunc.php" method="post">
         <input type="text" placeholder="Enter your username" name="username" />
         <input type="password" placeholder="Enter your password" name="password" />
-        <a href="./forgetPassword.html">Forgot password?</a>
+        <a href="./forgetPassword.php">Forgot password?</a>
         <input type="submit" class="button" value="Login" />
       </form>
       <div class="signup">
