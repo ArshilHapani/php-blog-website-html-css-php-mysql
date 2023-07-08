@@ -169,9 +169,9 @@ if (sha1($username) !== $_COOKIE["blog_hash"]) {
                     <p>
                         <?php
                         if (strlen(urldecode($row["blogTitle"])) > 25) {
-                            echo shorten_string($row["blogTitle"], 25);
+                            echo shorten_string(urldecode($row["blogTitle"], 25));
                         } else {
-                            echo $row["blogTitle"];
+                            echo  urldecode($row["blogTitle"]);
                         }
                         ?>
                     </p>
@@ -181,7 +181,7 @@ if (sha1($username) !== $_COOKIE["blog_hash"]) {
                             if (strlen($row["blogDescription"]) > 60) {
                                 echo shorten_string(urldecode($row["blogDescription"]), 60);
                             } else {
-                                echo $row["blogDescription"];
+                                echo urldecode($row["blogDescription"]);
                             }
                             ?>
                         </p>

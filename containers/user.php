@@ -279,12 +279,12 @@ if (isset($_GET["blogFlag"])) {
 
                 <h2 class="card-description-title"><?php echo isset($row["username"]) ? $row["username"]  : "Unverified user"  ?></h2>
 
-                <span class="card-description-profession"><?php echo isset($row["email"]) ? $row["username"]  : "Unverified user"  ?></span>
+                <span class="card-description-profession"><?php echo isset($row["email"]) ? $row["email"]  : "Unverified user"  ?></span>
 
                 <div class="card-description-social">
                     <button title="Create Blog" id="myBtn">Create Blog</button>
                     <button id="myBtn1">Edit email</button>
-                    <a href="http://localhost/PHP_3361603_Sem_6/blog_website/containers/myBlogs.php"><button> My Blogs</button></a>
+                    <a href="http://localhost/PHP_3361603_Sem_6/blog_website/containers/myBlogs.php"><button>My Blogs</button></a>
                     <form action="../functions/handleSignOut.php" method="get">
                         <button type="submit" style="margin-top: 10px;">Sign Out</button>
                     </form>

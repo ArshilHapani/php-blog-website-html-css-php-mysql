@@ -168,11 +168,6 @@ if (isset($_GET["deleteBlogFlag"])) {
                 <!-- Card content container -->
                 <div href="#" class="anchor-container-overlay">
                     <img class="image-overlay-bg-effect" src="<?php echo $image ?>" alt="sample test">
-                    <div class="content">
-                        <a href="#">
-                            <h1>Read blog</h1>
-                        </a>
-                    </div>
                 </div>
 
                 <div class="content-container-card-blog">
